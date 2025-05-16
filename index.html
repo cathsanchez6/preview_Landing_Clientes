@@ -282,6 +282,24 @@
   reader.readAsDataURL(file);
 });
   </script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      const datos = JSON.parse(localStorage.getItem("datosLanding"));
+    
+      if (datos) {
+        document.getElementById("sobre").innerText = datos.sobre;
+        document.getElementById("razon").innerText = datos.razon;
+        document.getElementById("nit").innerText = datos.nit;
+        document.getElementById("direccion").innerText = datos.direccion;
+        document.getElementById("telefono").innerText = datos.telefono;
+        document.getElementById("ciudad").innerText = datos.ciudad;
+        document.getElementById("correo").innerText = datos.correo;
+        document.getElementById("pagina").innerText = datos.pagina;
+        document.getElementById("link").innerText = datos.link;
+      }
+    });
+  </script>
+
 
 </body>
 </html>
