@@ -248,6 +248,40 @@
         }
       });
   </script>
+  <script>
+       let logoBlob = null; // Definir logoBlob fuera del ámbito del evento
+    let logoNombre = ""; // Definir logoNombre fuera del ámbito del evento
+
+  document.getElementById("logoInput").addEventListener("change", function (e) {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  if (file.size > 4 * 1024 * 1024) {
+    alert("El archivo supera los 4MB.");
+    return;
+  }
+
+  logoNombre = file.name;
+  document.getElementById("archivoNombre").textContent = logoNombre;
+  document.getElementById("mensajeCargadoLabel").style.display = "block";
+  document.getElementById("campoIconos").style.display = "block"; // Mostrar iconos de acción
+  
+
+
+  const mensaje = document.getElementById("mensajeCargadoLabel");
+ mensaje.style.display = "block";
+  
+  const imgPreview = document.getElementById("logoPreview");
+  const reader = new FileReader();
+
+  reader.onload = function (e) {
+    imgPreview.src = e.target.result;
+    logoBlob = file; // Asignar directamente el archivo como Blob
+  };
+
+  reader.readAsDataURL(file);
+});
+  </script>
 
 </body>
 </html>
