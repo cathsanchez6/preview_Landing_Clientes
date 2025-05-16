@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cintandina</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('assets/FONDO_CINTA_DE_SEGURIDAD_INTELIGENTE-01.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .contenedor-principal {
+      max-width: 600px; 
+      margin: 0 auto;
+      padding: 18px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 25px;
+      z-index: 10;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    .logo img {
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .texto-justificado {
+      text-align: justify;
+      font-size: 14px;
+      color: #444;
+      padding: 0 20px;
+      line-height: 1.6;
+      max-width: 500px;
+    }
+    .contenedor-marco {
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 40px 20px 20px 20px; 
+      width: 90%;
+      max-width: 500px;
+      text-align: left;
+      z-index: 10;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .contenedor-marco2 {
+      background-color: #787E87;
+      border-radius: 0 0 25px 25px;
+      padding: 20px;
+      margin: 0 -20px -20px -20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      text-transform: uppercase;
+      line-height: 1.4;
+    }
+    .formulario h2 {
+      color: #007837;
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: #333;
+      font-size: 14px;
+    }
+    .campo {
+      background-color: #eeeeee;
+      padding: 12px 15px;
+      border-radius: 20px;
+      color: #555;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+      font-size: 14px;
+    }
+    .fila-datos {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 10px;
+      flex: 1 1 48%
+    }
+    .grupo-dato {
+      flex: 1;
+      min-width: 100px;
+      margin-bottom: 10px;
+      flex: 1 1 48%
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .grupo-dato label {
+      font-weight: bold;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 2px;
+      color: #000;
+    }
+    .boton-confirmar {
+      display: block;
+      width: 100%;
+      background-color: #787E87;
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+      box-sizing: border-box;
+    }
+    .boton-confirmar:hover {
+      background-color: #787E87;
+    }
+    .boton-whatsapp {
+      display: block;
+      width: 100%;
+      background-color: #787E87;
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+      box-sizing: border-box;
+    }
+    .boton-whatsapp:hover {
+      background-color: #787E87;
+    }
+
+/* Responsive para que se adapte a cualquier pantalla */
+@media (max-width: 600px) {
+  .contenedor-principal {
+    padding: 0 20px; /* margen lateral reducido pero visible */
+  }
+  .contenedor-marco {
+    padding: 20px;
+  }
+  .contenedor-marco2 {
+    padding: 20px;
+  }
+  .formulario h2 {
+    font-size: 18px;
+  }
+  label, .campo, .campo2 {
+    font-size: 13px;
+  }
+  .logo img {
+    width: 140px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="contenedor-principal">
+    <div class="logo">
+      <br><img src="assets/LOGO_CINTANDINA_SIN_FONDO.png" alt="logo_cintandina">
+      <br>
+      <br>
+    </div>
+
+    <div class="texto-justificado">
+      <strong style="font-size: 18px;">Sobre Nosotros</strong>
+      <br>
+      Somos una empresa 100% Colombiana productora y comercializadora de cintas autoadhesivas y productos de embalaje para las diferentes aplicaciones, con énfasis en el mercado nacional y el continente americano.
+      <br><br>
+      Buscamos satisfacer las expectativas de los consumidores para garantizar seguridad y ofrecer diferentes alternativas en sus procesos de empaque, todo enmarcado en una excelente calidad e innovación, gracias a las actividades de investigación y diseño, para dar respuesta a las tendencias del mercado.
+    </div>
+    <br>
+    <div class="contenedor-marco">
+      <div class="formulario">
+        <label>Razón Social:</label>
+        <div class="campo">Cintandina S.A.</div>
+        <label>NIT:</label>
+        <div class="campo">890.321.924</div>
+        <label>Dirección:</label>
+        <div class="campo">Carrera 2 # 37 - 50</div>
+        <div class="fila-datos">
+          <div class="grupo-dato">
+            <label>Teléfono:</label>
+            <div class="campo">(602)4430801</div>
+          </div>
+          <div class="grupo-dato">
+            <label>Ciudad:</label>
+            <div class="campo">Cali</div>
+          </div>
+        </div>
+        <label>Correo Electrónico:</label>
+        <div class="campo">telemercadeo@cintandina.com</div>
+        <label>Página Web:</label>
+        <div class="campo">www.cintandina.com</div>
+        <div id="mas-informacion">
+          <label>Más información:</label>
+          <div class="campo"></div>
+        </div>
+      </div>
+      <br>
+      <div class="contenedor-marco2">
+        SI SE ENCUENTRA ROTA LA CINTA DE SEGURIDAD VERIFIQUE EL CONTENIDO EN PRESENCIA
+        DEL TRANSPORTADOR O COMUNIQUESE CON NOSOTROS.
+      </div> 
+    </div>
+      </div> 
+    <div style="width: 90%; max-width: 500px; margin: 0 auto 30px auto;">
+      <a class="boton-confirmar" href="https://cathsanchez6.github.io/Formulario_Prueba_dos/" target="_blank">
+        <i class="fas fa-box" style="margin-right: 10px;"></i> Confirmar entrega <i class="fas fa-hand-point-left" style="margin-left: 10px;"></i>
+      </a>
+      
+      <a class="boton-whatsapp" href="https://wa.me/+573206174727?text=Hola%2C%20necesito%20ayuda%20con%20un%20pedido%20que%20recib%C3%AD%20de%20Cintandina." target="_blank">
+        <i class="fab fa-whatsapp" style="margin-right: 10px;"></i> Reportar incidente <i class="fas fa-hand-point-left" style="margin-left: 10px;"></i>
+      </a>
+    </div>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var masInfo = document.getElementById("mas-informacion");
+        var campo = masInfo.querySelector(".campo");
+    
+        // Revisamos si el contenido tiene espacios en blanco o esta totalmente vacio
+        if (!campo.textContent.trim()) {
+          masInfo.style.display = "none";
+        }
+      });
+  </script>
+
+</body>
+</html>
